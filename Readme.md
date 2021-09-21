@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Настя Кулакова](https://up.htmlacademy.ru/htmlcss/32/user/1853291).
-* Наставник: `Неизвестно`.
+* Наставник: [Ekaterina Nikitina](https://htmlacademy.ru/profile/id489027).
 
 ---
 
