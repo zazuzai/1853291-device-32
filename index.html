@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
   </head>
   <body>
 
@@ -11,6 +12,7 @@
       <a href="index.html">
         <img src="img/logo_header.svg" width="145" height="36" class="header-logo" alt="логотип Девайс">
       </a>
+
         
       <nav class="header-navigation">
         <ul class="navigation-list navigation-user">
@@ -30,38 +32,38 @@
 
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class ="user-navigation-link" href="catalog.html">Каталог товаров</a>
             <button class="dropbtn"></button>
 
               <ul class="dropdown-catalog">
                 <li class="dropdown-catalog-item">
-                  <a href="#">Виртуальная реальность</a>
+                  <a class="dropdown-catalog-item" href="#">Виртуальная реальность</a>
                 </li>
                 <li class="dropdown-catalog-item">
-                  <a href="#">Фитнес-браслеты</a>
+                  <a class="dropdown-catalog-item" href="#">Фитнес-браслеты</a>
                 </li>
                 <li class="dropdown-catalog-item">
-                  <a href="#">Квадрокоптеры</a>
+                  <a class="dropdown-catalog-item" href="#">Квадрокоптеры</a>
                 </li>
                 <li class="dropdown-catalog-item">
-                  <a href="#">Моноподы для селфи</a>
+                  <a class="dropdown-catalog-item" href="#">Моноподы для селфи</a>
                 </li>
                 <li class="dropdown-catalog-item">
-                  <a href="#">Умные часы</a>
+                  <a class="dropdown-catalog-item" href="#">Умные часы</a>
                 </li>
                 <li class="dropdown-catalog-item">
-                  <a href="#">Экшн-камеры</a>
+                  <a class="dropdown-catalog-item" href="#">Экшн-камеры</a>
                 </li>
               </ul>      
           </li>
           <li class="navigation-item"> 
-            <a href="#">Доставка</a>
+            <a class ="user-navigation-link" href="#">Доставка</a>
           </li>
           <li class="navigation-item"> 
-            <a href="#">Гарантия</a>
+            <a class ="user-navigation-link" href="#">Гарантия</a>
           </li>
           <li class="navigation-item"> 
-            <a href="#">Контакты</a>
+            <a class ="user-navigation-link" href="#">Контакты</a>
           </li>  
         </ul>
 
@@ -73,11 +75,11 @@
       <section class="slider">
         <div class="slider-item">
           <img class="slider-image" src="img/slider/slider-1.png" width="560" height="560" alt="Коптер">
-          <p>Порхает как бабочка, <br>
+          <p class="slider-slogan">Порхает как бабочка, <br>
           жалит как пчела!</p>
           <p class="slider-item">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
           мощным лазером, замаскированным под стандартную камеру</p>
-          <a href="#">Подробнее</a>
+          <a class="slider-more" href="#">Подробнее</a>
           <table>
             <tr>
               <th>Дальность полета</th>
@@ -98,11 +100,11 @@
 
         <div class="slider-item">
           <img class="slider-image" src="img/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
-          <p>Худеем <br>
+          <p class="slider-slogan">Худеем <br>
           правильно!</p>
           <p class="slider-item">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
           не пропускать занятия и соблюдать диету.</p>
-          <a href="#">Подробнее</a>
+          <a class="slider-more" href="#">Подробнее</a>
           <table>
             <tr>
               <th>Без подзарядки</th>
@@ -121,11 +123,11 @@
 
         <div class="slider-item">
           <img class="slider-image" src="img/slider/slider-3.png" width="560" height="560" alt="Палка для селфи">
-          <p>Делай селфи, <br>
+          <p class="slider-slogan">Делай селфи, <br>
           как Бен Стиллер!</p>
           <p class="slider-item">Самая длинная палка для селфи доступна в нашем магазине. 
             <br>Восемь (Восемь, Карл!) метров диной и весом всего 5 кг.</p>
-          <a href="#">Подробнее</a>
+          <a class="slider-more" href="#">Подробнее</a>
           <table>
             <tr>
               <th>Длина палки</th>
@@ -168,22 +170,22 @@
         <section class="navigation-catalogue">
           <ul class="catalogue">
             <li class="navigation-item">
-              <a href="#">Виртуальная реальность</a>
+              <a class="catalogue-menu-link" href="#">Виртуальная реальность</a>
             </li>
             <li class="navigation-item">
-              <a href="#">Моноподы для селфи</a>
+              <a class="catalogue-menu-link" href="#">Моноподы для селфи</a>
             </li>
             <li class="navigation-item">
-              <a href="#">Экшн-камеры</a>
+              <a class="catalogue-menu-link" href="#">Экшн-камеры</a>
             </li>
             <li class="navigation-item">
-              <a href="#">Фитнес-браслеты</a>
+              <a class="catalogue-menu-link" href="#">Фитнес-браслеты</a>
             </li>
             <li class="navigation-item">
-              <a href="#">Умные часы</a>
+              <a class="catalogue-menu-link" href="#">Умные часы</a>
             </li>
             <li class="navigation-item">
-              <a href="#">Квадрокоптеры</a>
+              <a class="catalogue-menu-link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
 
@@ -191,30 +193,30 @@
 
         <ul role="tablist">
           <li role="presentation">
-              <a role="tab" href="#section1" id="tab1" aria-selected="true">
+              <a class="tablist" role="tab" href="#section1" id="tab1" aria-selected="true">
                   Доставка
               </a>
           </li>
           <li role="presentation">
-              <a role="tab" href="#section2" id="tab2">
+              <a class="tablist" role="tab" href="#section2" id="tab2">
                   Гарантия
               </a>
           </li>
           <li role="presentation">
-              <a role="tab" href="#section3" id="tab3">
+              <a class="tablist" role="tab" href="#section3" id="tab3">
                   Кредит
               </a>
           </li>
       </ul>
       <section role="tabpanel" id="section1" aria-labelledby="tab1">
-          <h2>Доставка</h2>
+          <h2 class="shipping">Доставка</h2>
           <p>Мы с удовольствием доставим ваш товар прямо <br>
             к вашему подъезду совершенно бесплатно! Ведь <br>
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
       </section>
 
       <section class="extra-shipping">
-        <a>доставим редкий товар под заказ</a>
+        <a class="extra-shipping">доставим редкий товар под заказ</a>
         <button class="info" type="button">
           <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
       </section>
@@ -223,17 +225,17 @@
         <h2 class="about-us">О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным <br>
           гика, который живёт в каждом из нас.</p>
-        <p class="shipping-details">Мы можем доставить ваш товар в самые отдалённые <br>
+        <p>Мы можем доставить ваш товар в самые отдалённые <br>
           уголки России транспортными компаниями:</p>
         <ul class="shipping-companies">
           <li>
-            <a href="#">Меловые линии</a>
+            <a class="shipping-details" href="#">Меловые линии</a>
           </li>
           <li>
-            <a href="#">СДИК</a>
+            <a class="shipping-details" href="#">СДИК</a>
           </li>
           <li>
-            <a href="#">ТоксБерри</a>
+            <a class="shipping-details" href="#">ТоксБерри</a>
           </li>
         </ul>
 
@@ -259,7 +261,8 @@
       </section>
 
       <section class="newsletter">
-        <h2>Подпишитесь на рассылку</h2>
+        <h2 class="newsletter">Подпишитесь <br>
+           на рассылку</h2>
         <p class="newsletter-about">Еженедельный дайджест с обзорами новинок, <br>
           длительными тест-драйвами, распаковками, а также акции, <br>
           спецпредложения и вот это вот всё.
@@ -269,7 +272,7 @@
             <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           </p>
           <button class="button newsletter-button" type="submit">
-            <span class="visually-hidden">Подписаться</span>
+            <span class="newsletter-button">Подписаться</span>
           </button>
         </form>
         <p class="newsletter-email">Это бесплатно</p>
@@ -288,14 +291,14 @@
 
       <nav>
         <ul class="footer-navigation">
-      <li class="footer-shipping"> 
-        <a href="#">Доставка</a>
+      <li class="footer-link"> 
+        <a class="footer-nav-link" href="#">Доставка</a>
         </li>
-      <li class="footer-guarantee"> 
-        <a href="#">Гарантия</a>
+      <li class="footer-link"> 
+        <a class="footer-nav-link" href="#">Гарантия</a>
         </li>
-      <li class="footer-contacts"> 
-        <a href="#">Контакты</a>
+      <li class="footer-link"> 
+        <a class="footer-nav-link" href="#">Контакты</a>
         </li>
         </ul>
       </nav>
