@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
   </head>
   <body>
-    <header class="page-header header-container">
+    <header class="page-header header-container content-container">
       <h1 class="visually-hidden">Интернет-магазин Девайс</h1>
       <a href="index.html">
         <img
@@ -19,26 +19,28 @@
       </a>
 
       <nav class="header-navigation">
-        <ul class="navigation-list-navigation-user">
-          <li class="navigation-item search-link">
-            <a class="navigation-link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link login-link" href="#">Вoйти</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link compare-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link busket-link" href="#">Корзина</a>
-          </li>
-        </ul>
+        <div class="navigation-user-wrapper">
+          <form action="https://echo.htmlacademy.ru/" method="get">
+            <input name="search" placeholder="Поиск по сайту" type="search" />
+            <button type="submit">Поиск</button>
+          </form>
+
+          <ul class="navigation-list-navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Вoйти</a>
+            </li>
+            <li class="navigation-item compare-link">
+              <a class="navigation-link" href="#">Сравнить</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
 
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a
-              class="user-navigation-link header-catalogue-link"
-              href="catalog.html"
+          <li class="navigation-item header-catalogue-link">
+            <a class="user-navigation-link" href="catalog.html"
               >Каталог товаров</a
             >
             <button class="dropbtn"></button>
@@ -80,7 +82,7 @@
     </header>
 
     <main class="main-container">
-      <section class="slider">
+      <section class="slider content-container">
         <div class="slider-item">
           <img
             class="slider-image"
@@ -259,7 +261,7 @@
         </div>
       </section>
 
-      <section class="navigation-catalogue">
+      <section class="navigation-catalogue content-container">
         <ul class="catalogue">
           <li class="catalogue-menu-item">
             <div class="vr"></div>
@@ -294,42 +296,44 @@
         </ul>
       </section>
 
-      <div class="tablist-container">
-        <ul role="tablist" class="tablist-menu">
-          <li role="presentation">
-            <a
-              class="tablist"
-              role="tab"
-              href="#section1"
-              id="tab1"
-              aria-selected="true"
-            >
-              Доставка
-            </a>
-          </li>
-          <li role="presentation">
-            <a class="tablist" role="tab" href="#section2" id="tab2">
-              Гарантия
-            </a>
-          </li>
-          <li role="presentation">
-            <a class="tablist" role="tab" href="#section3" id="tab3">
-              Кредит
-            </a>
-          </li>
-        </ul>
+      <div class="tablist-wrapper">
+        <div class="tablist-container content-container">
+          <ul role="tablist" class="tablist-menu">
+            <li role="presentation">
+              <a
+                class="tablist"
+                role="tab"
+                href="#section1"
+                id="tab1"
+                aria-selected="true"
+              >
+                Доставка
+              </a>
+            </li>
+            <li role="presentation">
+              <a class="tablist" role="tab" href="#section2" id="tab2">
+                Гарантия
+              </a>
+            </li>
+            <li role="presentation">
+              <a class="tablist" role="tab" href="#section3" id="tab3">
+                Кредит
+              </a>
+            </li>
+          </ul>
 
-        <section role="tabpanel" id="section1" aria-labelledby="tab1">
-          <h2 class="shipping">Доставка</h2>
-          <p>
-            Мы с удовольствием доставим ваш товар прямо <br />
-            к вашему подъезду совершенно бесплатно! Ведь <br />
-            мы неплохо заработаем, поднимая его на ваш этаж.
-          </p>
-        </section>
+          <section role="tabpanel" id="section1" aria-labelledby="tab1">
+            <h2 class="shipping">Доставка</h2>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо <br />
+              к вашему подъезду совершенно бесплатно! Ведь <br />
+              мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+          </section>
+        </div>
       </div>
 
-      <section class="extra-shipping">
+      <section class="extra-shipping content-container">
         <a class="extra-shipping">доставим редкий товар под заказ</a>
         <button class="info" type="button">
           <span class="visually-hidden"
@@ -338,7 +342,7 @@
         </button>
       </section>
 
-      <div class="about-us-and-contacts">
+      <div class="about-us-and-contacts content-container">
         <section class="about">
           <h2 class="about-us">О нас</h2>
           <p>
@@ -388,94 +392,90 @@
         </section>
       </div>
 
-      <section class="newsletter">
-        <div class="newsletter-container">
-          <h2 class="newsletter-title">
-            Подпишитесь <br />
-            на рассылку
-          </h2>
-          <p class="newsletter-about">
-            Еженедельный дайджест с обзорами новинок, <br />
-            длительными тест-драйвами, распаковками, а также акции, <br />
-            спецпредложения и вот это вот всё.
-          </p>
-        </div>
-        <form class="newsletter-form" action="#" method="post">
-          <p class="newsletter-email">
-            <input
-              class="field"
-              placeholder="Ваш e-mail"
-              type="email"
-              name="newsletter-email"
-              id="newsletter-email"
-              required
-            />
-          </p>
-          <button class="button newsletter-button" type="submit">
-            <span class="newsletter-button">Подписаться</span>
-          </button>
-        </form>
-        <p class="newsletter-email">Это бесплатно</p>
-      </section>
+      <div class="newsletter-wrapper">
+        <section class="newsletter content-container">
+          <div class="newsletter-container">
+            <h2 class="newsletter-title">
+              Подпишитесь <br />
+              на рассылку
+            </h2>
+            <p class="newsletter-about">
+              Еженедельный дайджест с обзорами новинок, <br />
+              длительными тест-драйвами, распаковками, а также акции, <br />
+              спецпредложения и вот это вот всё.
+            </p>
+          </div>
+          <form class="newsletter-form" action="#" method="post">
+            <p class="newsletter-email">
+              <input
+                class="field"
+                placeholder="Ваш e-mail"
+                type="email"
+                name="newsletter-email"
+                id="newsletter-email"
+                required
+              />
+            </p>
+            <button class="button newsletter-button" type="submit">
+              <span class="newsletter-button">Подписаться</span>
+            </button>
+          </form>
+          <p class="newsletter-email">Это бесплатно</p>
+        </section>
+      </div>
     </main>
 
     <footer class="page-footer">
-      <div class="footer-logo-and-adress">
-        <a href="index.html">
-          <img
-            src="img/logo_footer.svg"
-            width="145"
-            height="36"
-            class="footer-logo"
-            alt="логотип Девайс"
-          />
-        </a>
-        <address class="footer-contacts-address">
-          <p class="footer-contacts-address-text">
-            Санкт-Петербург, набережная <br />
-            реки Карповки, 5, литера П.
-          </p>
-        </address>
-      </div>
-
-      <div class="footer-navigation-and-socials">
-        <nav>
-          <ul class="footer-navigation">
-            <li class="footer-link">
-              <a class="footer-nav-link" href="#">Доставка</a>
-            </li>
-            <li class="footer-link">
-              <a class="footer-nav-link" href="#">Гарантия</a>
-            </li>
-            <li class="footer-link">
-              <a class="footer-nav-link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="footer-social">
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button" href="https://www.facebook.com/htmlacademy"></a>
-              <span class="visually-hidden">Facebook</span>
-            </li>
-            <li class="footer-social-item">
-              <a
-                class="button"
-                href="https://www.instagram.com/htmlacademy/"
-              ></a>
-              <span class="visually-hidden">Instagram</span>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://twitter.com/htmlacademy_ru"></a>
-              <span class="visually-hidden">twitter</span>
-            </li>
-          </ul>
+      <div class="content-container">
+        <div class="footer-logo-wrapper">
+          <a href="index.html">
+            <img
+              src="img/logo_footer.svg"
+              width="145"
+              height="36"
+              class="footer-logo"
+              alt="логотип Девайс"
+            />
+          </a>
         </div>
-      </div>
+        <div class="footer-content-wrapper">
+          <address class="footer-contacts-address">
+            <p class="footer-contacts-address-text">
+              Санкт-Петербург, набережная <br />
+              реки Карповки, 5, литера П.
+            </p>
+          </address>
 
-      <div class="footer-phone-and-logo">
-        <p class="phone-number">Тел.:+7(812)812-12-12</p>
+          <nav>
+            <ul class="footer-navigation">
+              <li class="footer-link">
+                <a class="footer-nav-link" href="#">Доставка</a>
+              </li>
+              <li class="footer-link">
+                <a class="footer-nav-link" href="#">Гарантия</a>
+              </li>
+              <li class="footer-link">
+                <a class="footer-nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="phone-number">Тел.:+7(812)812-12-12</p>
+        </div>
+
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="https://www.facebook.com/htmlacademy"></a>
+            <span class="visually-hidden">Facebook</span>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://www.instagram.com/htmlacademy/"></a>
+            <span class="visually-hidden">Instagram</span>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://twitter.com/htmlacademy_ru"></a>
+            <span class="visually-hidden">twitter</span>
+          </li>
+        </ul>
 
         <p class="footer-hmltacademy">
           <a href="https://htmlacademy.ru/">
