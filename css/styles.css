@@ -48,11 +48,26 @@ body {
   background-color: #ffffff;
 }
 
+h2,
+h3,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-inline-start: 0px;
+  list-style-type: none;
+}
+
 .content-container {
   width: 1160px;
   min-width: 1160px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 0px;
 }
 
 /*  header  */
@@ -75,10 +90,10 @@ input[type="search"] {
 
 .navigation-list-navigation-user {
   display: flex;
-  width: 547px;
+  width: 500px;
   margin-top: 0px;
   margin-bottom: 0px;
-  list-style-type: none;
+  justify-content: space-between;
 }
 
 .navigation-link {
@@ -99,7 +114,6 @@ input[type="search"] {
   display: flex;
   padding-left: 0px;
   justify-content: space-between;
-  list-style-type: none;
 }
 
 .user-navigation-link {
@@ -183,19 +197,20 @@ input[type="search"] {
   color: #000000;
 }
 
+.navigation-catalogue {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
 .catalogue {
   display: flex;
   justify-content: space-between;
-  padding-left: 0px;
-  list-style-type: none;
 }
 
 .vr {
   width: 160px;
   height: 160px;
-  margin-top: 70px;
   margin-bottom: 33px;
-
   background-color: #ffe17f;
   background-image: url(../img/catalog_menu/vr.svg);
   background-repeat: no-repeat;
@@ -205,9 +220,7 @@ input[type="search"] {
 .monopods {
   width: 160px;
   height: 160px;
-  margin-top: 70px;
   margin-bottom: 33px;
-
   background-color: #ffe17f;
   background-image: url(../img/catalog_menu/monopods.svg);
   background-repeat: no-repeat;
@@ -217,9 +230,7 @@ input[type="search"] {
 .cameras {
   width: 160px;
   height: 160px;
-  margin-top: 70px;
   margin-bottom: 33px;
-
   background-color: #ffe17f;
   background-image: url(../img/catalog_menu/action_cams.svg);
   background-repeat: no-repeat;
@@ -229,9 +240,7 @@ input[type="search"] {
 .fitness-tracker {
   width: 160px;
   height: 160px;
-  margin-top: 70px;
   margin-bottom: 33px;
-
   background-color: #ffe17f;
   background-image: url(../img/catalog_menu/fitness_trackers.svg);
   background-repeat: no-repeat;
@@ -241,9 +250,7 @@ input[type="search"] {
 .smart-watch {
   width: 160px;
   height: 160px;
-  margin-top: 70px;
   margin-bottom: 33px;
-
   background-color: #ffe17f;
   background-image: url(../img/catalog_menu/smart_watch.svg);
   background-repeat: no-repeat;
@@ -253,9 +260,7 @@ input[type="search"] {
 .copters {
   width: 160px;
   height: 160px;
-  margin-top: 70px;
   margin-bottom: 33px;
-
   background-color: #ffe17f;
   background-image: url(../img/catalog_menu/quadcopters.svg);
   background-repeat: no-repeat;
@@ -286,7 +291,6 @@ input[type="search"] {
 
 .tablist-wrapper {
   width: 100%;
-  display: flex;
   height: 318px;
   margin-top: 140px;
   margin-bottom: 90px;
@@ -303,15 +307,17 @@ input[type="search"] {
   display: flex;
   flex-direction: column;
   margin-right: 120px;
-
-  list-style-type: none;
 }
 
 .about-us-and-contacts {
-  width: 1103px;
   display: flex;
   justify-content: space-between;
-  margin-top: 97px;
+  margin-top: 100px;
+}
+
+.contacts,
+.newsletter-about {
+  padding-right: 40px;
 }
 
 .shipping,
@@ -327,10 +333,7 @@ input[type="search"] {
 }
 
 .extra-shipping {
-  display: flex;
   height: 100px;
-  justify-content: center;
-  align-items: center;
 
   font-family: "Raleway";
   font-weight: 800;
@@ -352,32 +355,18 @@ input[type="search"] {
 .newsletter-wrapper {
   width: 100%;
   background-color: #f0f0f0;
+  margin-top: 90px;
 }
 
 .newsletter-container {
   display: flex;
-  margin-top: 87px;
+  justify-content: space-between;
+  padding-top: 75px;
 }
 
 .contacts-subtitle h3 {
   font-weight: 700;
   font-size: 24px;
-}
-
-.newsletter-title {
-  display: flex;
-  width: 560px;
-  height: 120px;
-  justify-content: flex-start;
-  margin-top: 75px;
-}
-
-.newsletter-about {
-  display: flex;
-  width: 560px;
-  height: 100px;
-  margin-left: 40px;
-  margin-top: 87px;
 }
 
 .contacts-address-text,
@@ -404,14 +393,11 @@ input[type="search"] {
 .page-footer {
   width: 100%;
   background-color: #444444;
+  padding-top: 60px;
 
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
-}
-
-.footer-logo-wrapper {
-  margin-top: 62px;
 }
 
 .footer-content-wrapper {
@@ -424,7 +410,6 @@ input[type="search"] {
   width: 460px;
   margin-left: auto;
   justify-content: space-between;
-  list-style-type: none;
 }
 
 .footer-nav-link {
@@ -436,12 +421,6 @@ input[type="search"] {
   color: inherit;
   background-color: inherit;
   text-decoration: none;
-}
-
-.footer-social-list {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
 }
 
 .footer-contacts-address {
@@ -461,11 +440,25 @@ input[type="search"] {
 
 /*  catalog  */
 
+.breadcrumbs {
+  display: flex;
+  width: 425px;
+  justify-content: space-between;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
   text-decoration: none;
+}
+
+.catalog-wrapper {
+  display: flex;
+}
+
+.filter-container {
+  width: 270px;
 }
 
 .filter {
@@ -493,6 +486,12 @@ input[type="search"] {
   color: #000000;
 }
 
+.catalog-container-right {
+  width: 830px;
+  display: flex;
+  flex-direction: column;
+}
+
 .sorting {
   font-family: "Raleway";
   font-weight: 800;
@@ -502,6 +501,18 @@ input[type="search"] {
   letter-spacing: 0.2em;
   color: #000000;
   background-color: #ebebeb;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 70px;
+  padding-top: 70px;
+  justify-content: space-between;
+}
+
+.product-card {
+  width: 360px;
 }
 
 .product-card-link {
@@ -542,6 +553,11 @@ input[type="search"] {
   letter-spacing: 0.2em;
   color: #000000;
   text-decoration: none;
+}
+
+.button-pagination-show-more {
+  width: 760px;
+  margin-left: 70px;
 }
 
 .pagination-link {
