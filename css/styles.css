@@ -91,8 +91,6 @@ input[type="search"] {
 .navigation-list-navigation-user {
   display: flex;
   width: 500px;
-  margin-top: 0px;
-  margin-bottom: 0px;
   justify-content: space-between;
 }
 
@@ -304,8 +302,6 @@ input[type="search"] {
 .tablist-menu {
   width: 280px;
   height: 40px;
-  display: flex;
-  flex-direction: column;
   margin-right: 120px;
 }
 
@@ -453,12 +449,13 @@ input[type="search"] {
   text-decoration: none;
 }
 
-.catalog-wrapper {
+.catalog-content-wrapper {
   display: flex;
 }
 
 .filter-container {
-  width: 270px;
+  width: 200px;
+  padding-right: 70px;
 }
 
 .filter {
@@ -488,8 +485,6 @@ input[type="search"] {
 
 .catalog-container-right {
   width: 830px;
-  display: flex;
-  flex-direction: column;
 }
 
 .sorting {
@@ -553,11 +548,6 @@ input[type="search"] {
   letter-spacing: 0.2em;
   color: #000000;
   text-decoration: none;
-}
-
-.button-pagination-show-more {
-  width: 760px;
-  margin-left: 70px;
 }
 
 .pagination-link {
