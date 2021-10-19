@@ -48,6 +48,7 @@ body {
   background-color: #ffffff;
 }
 
+h1,
 h2,
 h3,
 p {
@@ -62,6 +63,10 @@ ul {
   list-style-type: none;
 }
 
+fieldset {
+  border: 0;
+}
+
 .content-container {
   width: 1160px;
   min-width: 1160px;
@@ -74,6 +79,7 @@ ul {
 
 .header-container {
   background-color: #ffe17f;
+  box-sizing: border-box;
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -104,7 +110,7 @@ input[type="search"] {
 }
 
 .compare-link {
-  margin-right: 15px;
+  margin-right: 55px;
   margin-left: auto;
 }
 
@@ -425,6 +431,12 @@ input[type="search"] {
   background-color: inherit;
 }
 
+.footer-social-list {
+  display: flex;
+  width: 150px;
+  margin: 0 auto;
+}
+
 .phone-number {
   display: inline;
   line-height: 30px;
@@ -434,7 +446,19 @@ input[type="search"] {
   text-decoration: none;
 }
 
+.footer-hmltacademy {
+  display: flex;
+  justify-content: flex-end;
+}
+
 /*  catalog  */
+
+.logout {
+  margin-left: auto;
+  margin-right: 60px;
+
+  opacity: 0.3;
+}
 
 .breadcrumbs {
   display: flex;
@@ -447,6 +471,10 @@ input[type="search"] {
   line-height: 19px;
   color: #000000;
   text-decoration: none;
+}
+
+.catalog-wrapper {
+  margin-left: 60px;
 }
 
 .catalog-content-wrapper {
@@ -485,6 +513,7 @@ input[type="search"] {
 
 .catalog-wrapper-right {
   width: 830px;
+  padding-left: 70px;
 }
 
 .sorting {
@@ -500,9 +529,8 @@ input[type="search"] {
 
 .product-list {
   display: flex;
+  width: 760px;
   flex-wrap: wrap;
-  padding-left: 70px;
-  padding-top: 70px;
   justify-content: space-between;
 }
 
@@ -535,6 +563,15 @@ input[type="search"] {
   letter-spacing: 0.2em;
   color: #000000;
   text-decoration: none;
+}
+
+.pagination {
+  display: flex;
+  width: 760px;
+}
+
+.button-pagination-show-more {
+  width: 760px;
 }
 
 .button-pagination-show-more,

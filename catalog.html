@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
   </head>
   <body>
-    <header class="page-header header-container content-container">
+    <header class="header-container content-container">
       <h1 class="visually-hidden">Интернет-магазин Девайс</h1>
       <a href="index.html">
         <img
@@ -29,10 +29,10 @@
               <a class="navigation-link" href="#">Коля Петухов</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Выйти</a>
+              <a class="navigation-link logout" href="#">Выйти</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Сравнить</a>
+              <a class="navigation-link compare-link" href="#">Сравнить</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">Корзина</a>
@@ -60,7 +60,9 @@
                 <a class="dropdown-catalog-link" href="#">Квадрокоптеры</a>
               </li>
               <li class="dropdown-catalog-item">
-                <a class="dropdown-catalog-link" href="#">Моноподы для селфи</a>
+                <a class="dropdown-catalog-link" href="catalog.html"
+                  >Моноподы для селфи</a
+                >
               </li>
               <li class="dropdown-catalog-item">
                 <a class="dropdown-catalog-link" href="#">Умные часы</a>
@@ -84,22 +86,24 @@
     </header>
 
     <main class="main-inner content-container">
-      <div class="inner-header">
-        <h2 class="inner-header-title">Моноподы для селфи</h2>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог товаров</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
-          </li>
-        </ul>
-      </div>
-
       <div class="catalog-wrapper">
+        <div class="inner-header">
+          <h2 class="inner-header-title">Моноподы для селфи</h2>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="catalog.html"
+                >Каталог товаров</a
+              >
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
+            </li>
+          </ul>
+        </div>
+
         <div class="catalog-content-wrapper">
           <div class="filter-container">
             <section class="filter">
@@ -249,73 +253,67 @@
               <button class="visually-hidden" type="submit">сортировка:</button>
             </form>
 
-            <div class="products-list-wrapper">
-              <ul class="product-list">
-                <li class="product-card">
-                  <a class="product-card-link" href="#">
-                    <img
-                      class="product-card-image"
-                      src="img/product_cards/unprof_monopod.jpg"
-                      width="360"
-                      height="380"
-                      alt="Любительская селфи-палка"
-                    />
-                    <p class="product-card-title">Любительская селфи-палка</p>
-                  </a>
-                  <p class="product-card-price">500 ₽</p>
-                  <a class="more" href="#">Подробнее</a>
-                </li>
+            <ul class="product-list">
+              <li class="product-card">
+                <a class="product-card-link" href="#">
+                  <img
+                    class="product-card-image"
+                    src="img/product_cards/unprof_monopod.jpg"
+                    width="360"
+                    height="380"
+                    alt="Любительская селфи-палка"
+                  />
+                  <p class="product-card-title">Любительская селфи-палка</p>
+                </a>
+                <p class="product-card-price">500 ₽</p>
+                <a class="more" href="#">Подробнее</a>
+              </li>
 
-                <li class="product-card">
-                  <a class="product-card-link" href="#">
-                    <img
-                      class="product-card-image"
-                      src="img/product_cards/prof_monopod.jpg"
-                      width="360"
-                      height="380"
-                      alt="Профессиональная селфи-палка"
-                    />
-                    <p class="product-card-title">
-                      Профессиональная селфи-палка
-                    </p>
-                  </a>
-                  <p class="product-card-price">1 500 ₽</p>
-                  <a class="product-card-more" href="#">Подробнее</a>
-                </li>
+              <li class="product-card">
+                <a class="product-card-link" href="#">
+                  <img
+                    class="product-card-image"
+                    src="img/product_cards/prof_monopod.jpg"
+                    width="360"
+                    height="380"
+                    alt="Профессиональная селфи-палка"
+                  />
+                  <p class="product-card-title">Профессиональная селфи-палка</p>
+                </a>
+                <p class="product-card-price">1 500 ₽</p>
+                <a class="product-card-more" href="#">Подробнее</a>
+              </li>
 
-                <li class="product-card">
-                  <a class="product-card-link" href="#">
-                    <img
-                      class="product-card-image"
-                      src="img/product_cards/waterproof_monopod.jpg"
-                      width="360"
-                      height="380"
-                      alt="Непотопляемая селфи-палка"
-                    />
-                    <p class="product-card-title">Непотопляемая селфи-палка</p>
-                  </a>
-                  <p class="product-card-price">2 500 ₽</p>
-                  <a class="more" href="#">Подробнее</a>
-                </li>
+              <li class="product-card">
+                <a class="product-card-link" href="#">
+                  <img
+                    class="product-card-image"
+                    src="img/product_cards/waterproof_monopod.jpg"
+                    width="360"
+                    height="380"
+                    alt="Непотопляемая селфи-палка"
+                  />
+                  <p class="product-card-title">Непотопляемая селфи-палка</p>
+                </a>
+                <p class="product-card-price">2 500 ₽</p>
+                <a class="more" href="#">Подробнее</a>
+              </li>
 
-                <li class="product-card">
-                  <a class="product-card-link" href="#">
-                    <img
-                      class="product-card-image"
-                      src="img/product_cards/follow_me_monopod.jpg"
-                      width="360"
-                      height="380"
-                      alt="Селфи-палка Следуй за мной"
-                    />
-                    <p class="product-card-title">
-                      Селфи-палка "Следуй за мной"
-                    </p>
-                  </a>
-                  <p class="product-card-price">4 900 ₽</p>
-                  <a class="more" href="#">Подробнее</a>
-                </li>
-              </ul>
-            </div>
+              <li class="product-card">
+                <a class="product-card-link" href="#">
+                  <img
+                    class="product-card-image"
+                    src="img/product_cards/follow_me_monopod.jpg"
+                    width="360"
+                    height="380"
+                    alt="Селфи-палка Следуй за мной"
+                  />
+                  <p class="product-card-title">Селфи-палка "Следуй за мной"</p>
+                </a>
+                <p class="product-card-price">4 900 ₽</p>
+                <a class="more" href="#">Подробнее</a>
+              </li>
+            </ul>
 
             <button class="button-pagination-show-more" type="button">
               загрузить еще
@@ -327,6 +325,7 @@
                   <span class="pagination-previous">назад</span>
                 </a>
               </li>
+
               <li class="pagination-item">
                 <a class="pagination-link pagination-current">1</a>
               </li>
