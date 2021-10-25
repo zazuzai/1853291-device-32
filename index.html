@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
@@ -43,8 +44,6 @@
             <a class="user-navigation-link" href="catalog.html"
               >Каталог товаров</a
             >
-            <button class="dropbtn"></button>
-
             <ul class="dropdown-catalog">
               <li class="dropdown-catalog-item">
                 <a class="dropdown-catalog-link" href="#"
@@ -102,6 +101,7 @@
               Этот обычный, на первый взгляд, квадрокоптер оснащен <br />
               мощным лазером, замаскированным под стандартную камеру.
             </p>
+            <div class="slider-link-container">
             <a class="slider-more" href="#">Подробнее</a>
             <ol class="slider-pagination">
               <li class="slider-pagination-item">
@@ -125,14 +125,15 @@
                 </button>
               </li>
             </ol>
+            </div>
             <table class="slider-table">
-              <tr>
-                <th>Дальность полета</th>
-                <th>Радиус поражения</th>
-              </tr>
               <tr>
                 <td>800 м</td>
                 <td>50 м</td>
+              </tr>
+              <tr>
+                <th>Дальность полета</th>
+                <th>Радиус поражения</th>
               </tr>
             </table>
             <button class="slider-button slider-prev" type="button">
@@ -161,6 +162,7 @@
               Мотивирующие фитнес-браслеты помогут найти в себе силы <br />
               не пропускать занятия и соблюдать диету.
             </p>
+            <div class="slider-link-container">
             <a class="slider-more" href="#">Подробнее</a>
             <ol class="slider-pagination">
               <li class="slider-pagination-item">
@@ -184,12 +186,13 @@
                 </button>
               </li>
             </ol>
+           </div>
             <table>
               <tr>
-                <th>Без подзарядки</th>
+                <td>48 часов</td>
               </tr>
               <tr>
-                <td>48 часов</td>
+                <th>Без подзарядки</th>
               </tr>
             </table>
             <button class="slider-button slider-prev" type="button">
@@ -218,6 +221,7 @@
               Самая длинная палка для селфи доступна в нашем магазине.
               <br />Восемь (Восемь, Карл!) метров диной и весом всего 5 кг.
             </p>
+            <div class="slider-link-container">
             <a class="slider-more" href="#">Подробнее</a>
             <ol class="slider-pagination">
               <li class="slider-pagination-item">
@@ -241,16 +245,17 @@
                 </button>
               </li>
             </ol>
+            </div>
             <table>
-              <tr>
-                <th>Длина палки</th>
-                <th>Вес палки</th>
-                <th>Материал</th>
-              </tr>
               <tr>
                 <td>8,5 м</td>
                 <td>5 м</td>
                 <td>Карбон</td>
+              </tr>
+              <tr>
+                <th>Длина палки</th>
+                <th>Вес палки</th>
+                <th>Материал</th>
               </tr>
             </table>
             <button class="slider-button slider-prev" type="button">
@@ -303,7 +308,7 @@
           <ul role="tablist" class="tablist-menu">
             <li role="presentation">
               <a
-                class="tablist"
+                class="tablist-link"
                 role="tab"
                 href="#section1"
                 id="tab1"
@@ -313,12 +318,12 @@
               </a>
             </li>
             <li role="presentation">
-              <a class="tablist" role="tab" href="#section2" id="tab2">
+              <a class="tablist-link" role="tab" href="#section2" id="tab2">
                 Гарантия
               </a>
             </li>
             <li role="presentation">
-              <a class="tablist" role="tab" href="#section3" id="tab3">
+              <a class="tablist-link" role="tab" href="#section3" id="tab3">
                 Кредит
               </a>
             </li>
@@ -347,11 +352,11 @@
       <div class="about-us-and-contacts content-container">
         <section class="about">
           <h2 class="about-us">О нас</h2>
-          <p>
+          <p class="description">
             Огромный выбор гаджетов не оставит равнодушным <br />
             гика, который живёт в каждом из нас.
           </p>
-          <p>
+          <p class="description">
             Мы можем доставить ваш товар в самые отдалённые <br />
             уголки России транспортными компаниями:
           </p>
@@ -372,18 +377,19 @@
 
         <section class="contacts">
           <h2 class="contacts-title">Контакты</h2>
-          <p class="contacts-about">
+          <p class="contacts-about description">
             Вы можете забрать товар сами, заехав в наш офис. <br />
             Заодно, сможете проверить работоспособность покупки.
           </p>
           <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
           <address class="contacts-address">
-            <p class="contacts-address-text">
-              Санкт-Петербург, набережная реки Карповки, 5, литера П.
-            </p>
+            <p class="contacts-address-text description">
+              Санкт-Петербург, набережная реки Карповки, 5, литера П. <br>
+
             <a class="contacts-phone" href="tel:88128121212"
               >8 (812) 812-12-12</a
             >
+            </p>
           </address>
           <h3 class="contacts-subtitle">Время работы</h3>
           <ul class="contacts-schedule">
@@ -407,6 +413,7 @@
               спецпредложения и вот это вот всё.
             </p>
           </div>
+          <div class="newsletter-form-wrapper">
           <form class="newsletter-form" action="#" method="post">
             <p class="newsletter-email">
               <input
@@ -422,8 +429,11 @@
               <span class="newsletter-button">Подписаться</span>
             </button>
           </form>
+
           <p class="newsletter-email">Это бесплатно</p>
+        </div>
         </section>
+
       </div>
     </main>
 
