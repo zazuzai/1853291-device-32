@@ -85,6 +85,12 @@ ol {
 
 fieldset {
   border: 0;
+  margin: 0px;
+  padding: 0px;
+}
+
+legend {
+  padding: 0px;
 }
 
 .content-container {
@@ -102,7 +108,7 @@ fieldset {
   box-sizing: border-box;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   padding-top: 16px;
 }
 
@@ -175,14 +181,26 @@ input[type="search"] {
 }
 
 .dropdown-catalog {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
   margin-top: 35px;
 }
+
+.dropdown-catalog-column {
+  display: flex;
+
+  flex-direction: column;
+}
+
 
 .dropbtn {
   display: flex;
 }
 
 .dropdown-catalog-link {
+  margin-bottom: 20px;
+
   font-size: 16px;
   line-height: 18px;
   color: #000000;
@@ -401,9 +419,22 @@ input[type="search"] {
   margin-bottom: 30px;
 }
 
-.extra-shipping {
+.extra-shipping-wrapper {
+  display: flex;
   height: 100px;
+
   margin-bottom: 100px;
+  padding-right: 30px;
+
+  border: 0px;
+  background-color: #f0f0f0;
+}
+
+.extra-shipping {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 40px;
 
   font-family: "Raleway";
   font-weight: 800;
@@ -413,6 +444,13 @@ input[type="search"] {
   letter-spacing: 0.2em;
   color: #000000;
   background-color: #f0f0f0;
+  text-decoration: none;
+}
+
+.info {
+  min-width: 40px;
+  min-height: 40px;
+  align-self: center;
 }
 
 .shipping-details {
@@ -524,16 +562,18 @@ input[type="email"] {
 .footer-content-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .footer-navigation {
   display: flex;
-  width: 460px;
+  width: 400px;
   margin-left: auto;
   justify-content: space-between;
 }
 
 .footer-nav-link {
+
   font-family: "Raleway";
   font-weight: 800;
   line-height: 21px;
@@ -550,16 +590,23 @@ input[type="email"] {
   background-color: inherit;
 }
 
+.socials-htmlacademy-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  width: 150px;
-  margin: 0 auto;
+  justify-content: center;
+  width: 400px;
+  margin-right: 230px;
 }
 
 .footer-social-item {
   min-width: 40px;
   min-height: 40px;
+  margin-right: 15px;
 }
 
 .phone-number {
@@ -647,10 +694,21 @@ input[type="email"] {
 }
 
 .catalog-filter-title {
+  margin-bottom: 30px;
+
   font-weight: bold;
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
+}
+
+.catalog-filter-group {
+  padding-bottom: 30px;
+}
+
+.control-label {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .sorting-wrapper {
@@ -763,9 +821,18 @@ input[type="email"] {
 }
 
 .pagination-link {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
   font-size: 16px;
   line-height: 19px;
   color: #444444;
   background-color: #ebebeb;
   text-decoration: none;
+}
+
+.pagination-number {
+  width: 40px;
+  text-align: center;
 }

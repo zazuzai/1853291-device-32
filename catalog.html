@@ -47,27 +47,19 @@
             >
 
             <ul class="dropdown-catalog">
-              <li class="dropdown-catalog-item">
-                <a class="dropdown-catalog-link" href="#"
-                  >Виртуальная реальность</a
-                >
+              <li class="dropdown-catalog-column">
+                 <a class="dropdown-catalog-link" href="#"
+                    >Виртуальная реальность</a>
+                  <a class="dropdown-catalog-link" href="catalog.html"
+                    >Моноподы для селфи</a>
+                  <a class="dropdown-catalog-link" href="#">Экшн-камеры</a>
               </li>
-              <li class="dropdown-catalog-item">
+              <li class="dropdown-catalog-column">
                 <a class="dropdown-catalog-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="dropdown-catalog-item">
-                <a class="dropdown-catalog-link" href="#">Квадрокоптеры</a>
-              </li>
-              <li class="dropdown-catalog-item">
-                <a class="dropdown-catalog-link" href="catalog.html"
-                  >Моноподы для селфи</a
-                >
-              </li>
-              <li class="dropdown-catalog-item">
                 <a class="dropdown-catalog-link" href="#">Умные часы</a>
               </li>
-              <li class="dropdown-catalog-item">
-                <a class="dropdown-catalog-link" href="#">Экшн-камеры</a>
+              <li class="dropdown-catalog-column">
+                <a class="dropdown-catalog-link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
           </li>
@@ -112,7 +104,7 @@
                 action="https://echo.htmlacademy.ru/"
                 method="get"
               >
-                <fieldset class="catalog-filter-group">
+                <fieldset class="catalog-filter-group price-group">
                   <legend class="catalog-filter-title">Стоимость</legend>
                   <button class="range-toggle toggle-min" type="button">
                     <span class="visually-hidden"
@@ -142,7 +134,7 @@
                   </label>
                 </fieldset>
 
-                <fieldset class="catalog-filter-group">
+                <fieldset class="catalog-filter-group color-group">
                   <legend class="catalog-filter-title">Цвет</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
@@ -204,7 +196,7 @@
                   </ul>
                 </fieldset>
 
-                <fieldset class="catalog-filter-group">
+                <fieldset class="catalog-filter-group bluetooth-group">
                   <legend class="catalog-filter-title">Bluetooth</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
@@ -242,112 +234,112 @@
 
           <div class="catalog-wrapper-right">
             <div class="sorting-wrapper">
-            <form class="sorting-type">
-              <label for="sorting" class="sorting">сортировка:</label>
-              <select class="select-control" id="sorting" name="sorting">
-                <option value="popular">Сначала популярные</option>
-                <option value="cheap">Сначала дешевые</option>
-                <option value="expensive">Сначала дорогие</option>
-              </select>
-              <button class="visually-hidden" type="submit">сортировка:</button>
-            </form>
+              <form class="sorting-type">
+                <label for="sorting" class="sorting">сортировка:</label>
+                <select class="select-control" id="sorting" name="sorting">
+                  <option value="popular">Сначала популярные</option>
+                  <option value="cheap">Сначала дешевые</option>
+                  <option value="expensive">Сначала дорогие</option>
+                </select>
+                <button class="visually-hidden" type="submit">сортировка:</button>
+              </form>
             </div>
 
             <div class="product-list-container">
-            <ul class="product-list">
-              <li class="product-card">
-                <a class="product-card-link" href="#">
-                  <img
-                    class="product-card-image"
-                    src="img/product_cards/unprof_monopod.jpg"
-                    width="360"
-                    height="380"
-                    alt="Любительская селфи-палка"
-                  />
-                  <p class="product-card-title">Любительская селфи-палка</p>
-                </a>
-                <p class="product-card-price">500 ₽</p>
-                <a class="product-card-more" href="#">Подробнее</a>
-              </li>
-
-              <li class="product-card">
-                <a class="product-card-link" href="#">
-                  <img
-                    class="product-card-image"
-                    src="img/product_cards/prof_monopod.jpg"
-                    width="360"
-                    height="380"
-                    alt="Профессиональная селфи-палка"
-                  />
-                  <p class="product-card-title">Профессиональная селфи-палка</p>
-                </a>
-                <p class="product-card-price">1 500 ₽</p>
-                <a class="product-card-more" href="#">Подробнее</a>
-              </li>
-
-              <li class="product-card">
-                <a class="product-card-link" href="#">
-                  <img
-                    class="product-card-image"
-                    src="img/product_cards/waterproof_monopod.jpg"
-                    width="360"
-                    height="380"
-                    alt="Непотопляемая селфи-палка"
-                  />
-                  <p class="product-card-title">Непотопляемая селфи-палка</p>
-                </a>
-                <p class="product-card-price">2 500 ₽</p>
-                <a class="product-card-more" href="#">Подробнее</a>
-              </li>
-
-              <li class="product-card">
-                <a class="product-card-link" href="#">
-                  <img
-                    class="product-card-image"
-                    src="img/product_cards/follow_me_monopod.jpg"
-                    width="360"
-                    height="380"
-                    alt="Селфи-палка Следуй за мной"
-                  />
-                  <p class="product-card-title">Селфи-палка "Следуй за мной"</p>
-                </a>
-                <p class="product-card-price">4 900 ₽</p>
-                <a class="product-card-more" href="#">Подробнее</a>
-              </li>
-            </ul>
-
-            <button class="button-pagination-show-more" type="button">
-              загрузить еще
-            </button>
-
-            <div class="pagination">
-              <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="pagination-previous">назад</span>
-              </a>
-
-              <ul class="pagination-list">
-                <li class="pagination-item pagination-item-current">
-                  <a class="pagination-link">1</a>
+              <ul class="product-list">
+                <li class="product-card">
+                  <a class="product-card-link" href="#">
+                    <img
+                      class="product-card-image"
+                      src="img/product_cards/unprof_monopod.jpg"
+                      width="360"
+                      height="380"
+                      alt="Любительская селфи-палка"
+                    />
+                    <p class="product-card-title">Любительская селфи-палка</p>
+                  </a>
+                  <p class="product-card-price">500 ₽</p>
+                  <a class="product-card-more" href="#">Подробнее</a>
                 </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">2</a>
+
+                <li class="product-card">
+                  <a class="product-card-link" href="#">
+                    <img
+                      class="product-card-image"
+                      src="img/product_cards/prof_monopod.jpg"
+                      width="360"
+                      height="380"
+                      alt="Профессиональная селфи-палка"
+                    />
+                    <p class="product-card-title">Профессиональная селфи-палка</p>
+                  </a>
+                  <p class="product-card-price">1 500 ₽</p>
+                  <a class="product-card-more" href="#">Подробнее</a>
                 </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">3</a>
+
+                <li class="product-card">
+                  <a class="product-card-link" href="#">
+                    <img
+                      class="product-card-image"
+                      src="img/product_cards/waterproof_monopod.jpg"
+                      width="360"
+                      height="380"
+                      alt="Непотопляемая селфи-палка"
+                    />
+                    <p class="product-card-title">Непотопляемая селфи-палка</p>
+                  </a>
+                  <p class="product-card-price">2 500 ₽</p>
+                  <a class="product-card-more" href="#">Подробнее</a>
                 </li>
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-disabled">...</a>
-                </li>
-                <li class="pagination-item">
-                  <a class="pagination-link" href="#">15</a>
+
+                <li class="product-card">
+                  <a class="product-card-link" href="#">
+                    <img
+                      class="product-card-image"
+                      src="img/product_cards/follow_me_monopod.jpg"
+                      width="360"
+                      height="380"
+                      alt="Селфи-палка Следуй за мной"
+                    />
+                    <p class="product-card-title">Селфи-палка "Следуй за мной"</p>
+                  </a>
+                  <p class="product-card-price">4 900 ₽</p>
+                  <a class="product-card-more" href="#">Подробнее</a>
                 </li>
               </ul>
+
+              <button class="button-pagination-show-more" type="button">
+                загрузить еще
+              </button>
+
+              <div class="pagination">
+                <a class="pagination-link pagination-prev pagination-disabled">
+                  <span class="pagination-previous">назад</span>
+                </a>
+
+                <ul class="pagination-list">
+                  <li class="pagination-item pagination-item-current">
+                    <a class="pagination-link pagination-number">1</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-number" href="#">2</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-number" href="#">3</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-disabled">...</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-number" href="#">15</a>
+                  </li>
+                </ul>
 
                 <a class="pagination-link pagination-next" href="#">
                   <span class="pagination-next">вперёд</span>
                 </a>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
@@ -390,31 +382,33 @@
           <p class="phone-number">Тел.:+7(812)812-12-12</p>
         </div>
 
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="https://www.facebook.com/htmlacademy"></a>
-            <span class="visually-hidden">Facebook</span>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.instagram.com/htmlacademy/"></a>
-            <span class="visually-hidden">Instagram</span>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru"></a>
-            <span class="visually-hidden">twitter</span>
-          </li>
-        </ul>
+        <div class="socials-htmlacademy-wrapper">
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button" href="https://www.facebook.com/htmlacademy"></a>
+              <span class="visually-hidden">Facebook</span>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.instagram.com/htmlacademy/"></a>
+              <span class="visually-hidden">Instagram</span>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://twitter.com/htmlacademy_ru"></a>
+              <span class="visually-hidden">twitter</span>
+            </li>
+          </ul>
 
-        <p class="footer-hmltacademy">
-          <a href="https://htmlacademy.ru/">
-            <img
-              src="img/htmlacademy_logo.svg"
-              width="115"
-              height="33"
-              alt="Логотип html academy"
-            />
-          </a>
-        </p>
+          <p class="footer-hmltacademy">
+            <a href="https://htmlacademy.ru/">
+              <img
+                src="img/htmlacademy_logo.svg"
+                width="115"
+                height="33"
+                alt="Логотип html academy"
+              />
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   </body>
