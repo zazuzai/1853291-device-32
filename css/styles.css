@@ -104,6 +104,8 @@ legend {
 /*  header  */
 
 .header-container {
+  position: relative;
+
   background-color: #ffe17f;
   box-sizing: border-box;
   padding-left: 60px;
@@ -144,6 +146,27 @@ input[type="search"] {
   background-color: #ffe17f;
 
   text-decoration: none;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  background-image: url(/img/nav_header/login.svg);
+  width: 13px;
+  height: 12px;
+  color: #000000;
+  margin-right: 16px;
+}
+
+.login-link:focus {
+  position: absolute;
+
+  width: 117px;
+  height: 40px;
+
+  border: 2px solid #AF4FFF;
+  box-sizing: border-box;
+  border-radius: 20px;
 }
 
 .compare-link {
@@ -226,6 +249,8 @@ grid-column: 3;
 }
 
 .slider-content {
+  position: relative;
+
   width: 560px;
   margin-left: 40px;
 }
@@ -259,6 +284,16 @@ grid-column: 3;
   letter-spacing: 0.2em;
   color: #000000;
   text-decoration: none;
+}
+
+.command-btn::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 8px;
+  z-index: -1;
+  margin-top: 5px;
+  background-color: #f0c52e;
 }
 
 .slider-table {
