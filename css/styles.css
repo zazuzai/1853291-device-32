@@ -542,7 +542,7 @@ grid-column: 3;
 
 .catalogue-menu-link {
   display: block;
-  position: relative;
+
 
   font-family: "Raleway";
   font-weight: 800;
@@ -553,12 +553,31 @@ grid-column: 3;
 }
 
 .catalogue-menu-link::before {
-  position: absolute;
+
   display: block;
   content: "";
-  width: 160px;
-  height: 160px;
+  width: 158px;
+  height: 158px;
+  margin-bottom: 33px;
   background-color: #ffe17f;
+  border: 5px solid transparent;
+}
+
+.catalogue-menu-link:hover::before {
+  background-color: #ffc700;
+}
+
+.catalogue-menu-link:focus {
+  color: #af4fff;
+}
+
+.catalogue-menu-link:focus::before {
+  border: 5px solid #af4fff;
+}
+
+.catalogue-menu-link:active::before {
+  background-color: #ffc700;
+  opacity: 0.3;
 }
 
 .vr::before {
@@ -629,7 +648,6 @@ grid-column: 3;
 
 .tablist-menu {
   width: 280px;
-  margin-right: 120px;
 }
 
 .tablist-link {
@@ -662,7 +680,21 @@ grid-column: 3;
 }
 
 
+.tablist-section {
+  position: relative;
+  padding-left: 120px;
+}
 
+.tablist-section::before {
+  position: absolute;
+  content: "";
+  display: block;
+  left: -2%;
+  top: -40%;
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
+}
 
 .about-us-and-contacts {
   display: flex;
