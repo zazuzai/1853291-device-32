@@ -8,33 +8,33 @@
   </head>
   <body>
     <header class="header-container content-container">
-      <h1 class="visually-hidden">Интернет-магазин Девайс</h1>
+      <h1 class="visually-hidden header-logo">Интернет-магазин Девайс</h1>
       <a href="index.html">
         <img
           src="img/logo_header.svg"
           width="145"
           height="36"
-          class="header-logo"
+          class="header-logo-img"
           alt="логотип Девайс"
         />
       </a>
 
       <nav class="header-navigation">
         <div class="navigation-user-wrapper">
-          <form action="https://echo.htmlacademy.ru/" method="get">
+          <form action="https://echo.htmlacademy.ru/" method="get" class="header-search-form">
             <input name="search" placeholder="Поиск по сайту" type="search" />
-            <button type="submit" class="search-button">Поиск</button>
+            <button type="submit" class="search-button">Найти</button>
           </form>
 
           <ul class="navigation-list-navigation-user">
-            <li class="navigation-item-user login-link">
-              <a class="navigation-link" href="#">Вoйти</a>
+            <li class="navigation-item-user">
+              <a class="navigation-link login-link" href="#">Вoйти</a>
             </li>
-            <li class="navigation-item-user compare-link">
-              <a class="navigation-link" href="#">Сравнить</a>
+            <li class="navigation-item-user">
+              <a class="navigation-link compare-link" href="#">Сравнить</a>
             </li>
-            <li class="navigation-item-user basket-link">
-              <a class="navigation-link" href="#"><span class="basket-span">2</span>Корзина</a>
+            <li class="navigation-item-user">
+              <a class="navigation-link basket-link" href="#"><span class="basket-span">2</span>Корзина</a>
             </li>
           </ul>
         </div>
@@ -143,7 +143,7 @@
           </div>
         </div>
 
-        <div class="slider-item content-container">
+        <div class="slider-item content-container slider-item2">
           <img
             class="slider-image"
             src="img/slider/slider-2.png"
@@ -202,7 +202,7 @@
           </div>
         </div>
 
-        <div class="slider-item content-container">
+        <div class="slider-item content-container slider-item3">
           <img
             class="slider-image"
             src="img/slider/slider-3.png"
@@ -321,24 +321,37 @@
             </li>
           </ul>
 
-          <section role="tabpanel" id="section1" aria-labelledby="tab1" class="tablist-section">
-            <h2 class="shipping">Доставка</h2>
+          <section role="tabpanel" id="section1" aria-labelledby="tab1" class="tablist-section tab-shipping-info">
+            <h2 class="tab-title">Доставка</h2>
             <p>
               Мы с удовольствием доставим ваш товар прямо <br />
               к вашему подъезду совершенно бесплатно! Ведь <br />
               мы неплохо заработаем, поднимая его на ваш этаж.
             </p>
           </section>
+
+          <section role="tabpanel" id="section2" aria-labelledby="tab2" class="tablist-section tab-warranty-info">
+            <h2 class="tab-title">Гарантия</h2>
+            <p>
+              Если из-за возгорания купленного у нас товара у вас <br>
+              сгорит дом — не переживайте, мы выдадим вам новый. <br>
+              Товар, не дом, конечно же.
+            </p>
+          </section>
+
+          <section role="tabpanel" id="section3" aria-labelledby="tab3" class="tablist-section tab-credit-info">
+            <h2 class="tab-title">Кредит</h2>
+            <p>
+              Залезть в долговую яму стало проще! Кредитные <br>
+              консультанты подберут для вас наиболее выгодные <br>
+              условия кредита. Выгодные для банка, разумеется.
+            </p>
+          </section>
         </div>
       </div>
 
       <section class="extra-shipping-wrapper content-container">
-        <a class="extra-shipping">доставим редкий товар под заказ</a>
-        <button class="info" type="button">
-          <span class="visually-hidden"
-            >Посмотреть дополнительную информацию</span
-          >
-        </button>
+        <a class="extra-shipping" href="#">доставим редкий товар под заказ</a>
       </section>
 
       <div class="about-us-and-contacts content-container">
@@ -346,7 +359,7 @@
           <h2 class="about-us">О нас</h2>
           <p class="description">
             Огромный выбор гаджетов не оставит равнодушным <br />
-            гика, который живёт в каждом из нас.
+            гика, который есть в каждом из нас.
           </p>
           <p class="description">
             Мы можем доставить ваш товар в самые отдалённые <br />
@@ -379,7 +392,7 @@
               Санкт-Петербург, набережная реки Карповки, 5, литера П. <br>
 
             <a class="contacts-phone" href="tel:88128121212"
-              >8 (812) 812-12-12</a
+              >+7 (812) 812-12-12</a
             >
             </p>
           </address>
@@ -453,43 +466,37 @@
           <nav>
             <ul class="footer-navigation">
               <li class="footer-link">
-                <a class="footer-nav-link" href="#">Доставка</a>
+                <a class="footer-nav-link footer-shipping-link" href="#">Доставка</a>
               </li>
               <li class="footer-link">
-                <a class="footer-nav-link" href="#">Гарантия</a>
+                <a class="footer-nav-link footer-warranty-link" href="#">Гарантия</a>
               </li>
               <li class="footer-link">
-                <a class="footer-nav-link" href="#">Контакты</a>
+                <a class="footer-nav-link footer-contacts-link" href="#">Контакты</a>
               </li>
             </ul>
           </nav>
-          <p class="phone-number">Тел.:+7(812)812-12-12</p>
+          <a class="footer-phone" href="tel:88128121212">Тел.:+7 (812) 812-12-12</a>
         </div>
 
         <div class="socials-htmlacademy-wrapper">
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="facebook" href="https://www.facebook.com/htmlacademy"></a>
+              <a class="footer-social-link facebook" href="https://www.facebook.com/htmlacademy"></a>
               <span class="visually-hidden">Facebook</span>
             </li>
             <li class="footer-social-item">
-              <a class="instagram" href="https://www.instagram.com/htmlacademy/"></a>
+              <a class="footer-social-link instagram" href="https://www.instagram.com/htmlacademy/"></a>
               <span class="visually-hidden">Instagram</span>
             </li>
             <li class="footer-social-item">
-              <a class="twitter" href="https://twitter.com/htmlacademy_ru"></a>
+              <a class="footer-social-link twitter" href="https://twitter.com/htmlacademy_ru"></a>
               <span class="visually-hidden">twitter</span>
             </li>
           </ul>
 
           <p class="footer-hmltacademy">
-            <a href="https://htmlacademy.ru/">
-              <img
-                src="img/htmlacademy_logo.svg"
-                width="115"
-                height="33"
-                alt="Логотип html academy"
-              />
+            <a href="https://htmlacademy.ru/" class="footer-academy-link">
             </a>
           </p>
         </div>
