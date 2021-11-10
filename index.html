@@ -22,8 +22,8 @@
       <nav class="header-navigation">
         <div class="navigation-user-wrapper">
           <form action="https://echo.htmlacademy.ru/" method="get" class="header-search-form">
-            <input name="search" placeholder="Поиск по сайту" type="search" />
-            <button type="submit" class="search-button">Найти</button>
+            <input name="search"  class="input-header-search" placeholder="Поиск по сайту" type="search" />
+            <button type="submit" class="header-search-button">Найти</button>
           </form>
 
           <ul class="navigation-list-navigation-user">
@@ -213,10 +213,10 @@
             alt="Палка для селфи"
           />
           <div class="slider-content">
-            <button class="slider-button slider-prev" type="button">
+            <button class="slider-button slider3-prev" type="button">
               <span class="visually-hidden">Предыдущий товар</span>
             </button>
-            <button class="slider-button slider-next" type="button">
+            <button class="slider-button slider3-next" type="button">
               <span class="visually-hidden">Следующий товар</span>
             </button>
             <p class="slider-slogan">
@@ -225,7 +225,7 @@
             </p>
             <p class="slider-item-text">
               Самая длинная палка для селфи доступна в нашем магазине.
-              <br />Восемь (Восемь, Карл!) метров диной и весом всего 5 кг.
+              <br />Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
             </p>
             <div class="slider-link-container">
             <a class="slider-more command-btn" href="#">Подробнее</a>
@@ -254,9 +254,9 @@
             </div>
             <table>
               <tr>
-                <td>8,5 м</td>
-                <td>5 м</td>
-                <td>Карбон</td>
+                <td class="slider3-td">8,5 м</td>
+                <td class="slider3-td">5 м</td>
+                <td class="slider3-td">Карбон</td>
               </tr>
               <tr>
                 <th>Длина палки</th>
@@ -354,7 +354,9 @@
       </div>
 
       <section class="extra-shipping-wrapper content-container">
-        <a class="extra-shipping" href="#">доставим редкий товар под заказ</a>
+        <a class="extra-shipping" href="#">доставим редкий товар под заказ
+          <i class="etra-shipping-info-icon"></i>
+        </a>
       </section>
 
       <div class="about-us-and-contacts content-container">
@@ -387,7 +389,7 @@
           <h2 class="contacts-title">Контакты</h2>
           <p class="contacts-about description">
             Вы можете забрать товар сами, заехав в наш офис. <br />
-            Заодно, сможете проверить работоспособность покупки.
+            Заодно сможете проверить работоспособность покупки.
           </p>
           <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
           <address class="contacts-address">
@@ -425,7 +427,7 @@
           <form class="newsletter-form" action="#" method="post">
             <p class="newsletter-email">
               <input
-                class="field"
+                class="main-newsletter-email"
                 placeholder="Ваш e-mail"
                 type="email"
                 name="newsletter-email"
