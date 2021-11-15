@@ -115,45 +115,55 @@
                 >
                   <fieldset class="catalog-filter-group price-group">
                     <legend class="catalog-filter-title">Стоимость</legend>
-                    <button class="range-toggle toggle-min" type="button">
-                      <span class="visually-hidden"
-                        >Изменить минимальную цену.</span
-                      >
-                    </button>
-                    <button class="range-toggle toggle-max" type="button">
-                      <span class="visually-hidden"
-                        >Изменить максимальную цену.</span
-                      >
-                    </button>
-                    <label class="catalog-filter-label">
-                      от 0
-                      <input
-                        class="catalog-filter-input visually-hidden"
-                        type="number"
-                        name="min-price"
-                      />
-                    </label>
-                    <label class="catalog-filter-label">
-                      до 5000
-                      <input
-                        class="catalog-filter-input visually-hidden"
-                        type="number"
-                        name="max-price"
-                      />
-                    </label>
+
+                    <div class="range">
+                      <div class="range-scale">
+                        <div class="range-bar" style="width: 110px">
+                          <button class="range-toggle toggle-min" type="button">
+                            <span class="visually-hidden"
+                              >Изменить минимальную цену.</span
+                            >
+                          </button>
+                          <button class="range-toggle toggle-max" type="button">
+                            <span class="visually-hidden"
+                              >Изменить максимальную цену.</span
+                            >
+                          </button>
+                        </div>
+                      </div>
+
+
+                      <div class="range-wrapper-inputs">
+                        <label class="catalog-filter-label label-min-price">от<input
+                            class="catalog-filter-input filter-input-min"
+                            type="number"
+                            value="0"
+                            name="min-price"
+                          />
+                        </label>
+                        <label class="catalog-filter-label">до<input
+                            class="catalog-filter-input filter-input-max"
+                            type="number"
+                            value="5000"
+                            name="max-price"
+                          />
+                        </label>
+                      </div>
+                    </div>
                   </fieldset>
 
                   <fieldset class="catalog-filter-group color-group">
-                    <legend class="catalog-filter-title">Цвет</legend>
+                    <legend class="catalog-filter-title color-group-title">Цвет</legend>
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
-                        <label class="catalog-filter-color">
+                        <label class="control catalog-filter-color">
                           <input
                             class="visually-hidden control-input"
                             type="checkbox"
                             name="black"
                             checked
                           />
+                          <span class="control-mark"></span>
                           <span class="control-label">Черный</span>
                         </label>
                       </li>
@@ -166,6 +176,7 @@
                             name="white"
                             checked
                           />
+                          <span class="control-mark"></span>
                           <span class="control-label">Белый</span>
                         </label>
                       </li>
@@ -177,6 +188,7 @@
                             type="checkbox"
                             name="blue"
                           />
+                          <span class="control-mark"></span>
                           <span class="control-label">Синий</span>
                         </label>
                       </li>
@@ -188,6 +200,7 @@
                             type="checkbox"
                             name="red"
                           />
+                          <span class="control-mark"></span>
                           <span class="control-label">Красный</span>
                         </label>
                       </li>
@@ -199,6 +212,7 @@
                             type="checkbox"
                             name="pink"
                           />
+                          <span class="control-mark"></span>
                           <span class="control-label">Розовый</span>
                         </label>
                       </li>
@@ -206,7 +220,7 @@
                   </fieldset>
 
                   <fieldset class="catalog-filter-group bluetooth-group">
-                    <legend class="catalog-filter-title">Bluetooth</legend>
+                    <legend class="catalog-filter-title bluetooth-group-title">Bluetooth</legend>
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
                         <label class="control">
@@ -221,6 +235,7 @@
                           <span class="control-label">Есть</span>
                         </label>
                       </li>
+
                       <li class="catalog-filter-item">
                         <label class="control">
                           <input
@@ -228,6 +243,7 @@
                             type="radio"
                             name="bluetooth"
                             value="no"
+
                           />
                           <span class="control-mark"></span>
                           <span class="control-label">Нет</span>
@@ -329,8 +345,7 @@
                 </button>
 
                 <div class="pagination">
-                  <a class="pagination-link pagination-prev pagination-disabled">
-                    <span class="pagination-previous">назад</span>
+                  <a href="#" class="pagination-link pagination-prev pagination-disabled">назад
                   </a>
 
                   <ul class="pagination-list">
@@ -351,9 +366,7 @@
                     </li>
                   </ul>
 
-                  <a class="pagination-link pagination-next" href="#">
-                    <span class="pagination-next">вперёд</span>
-                  </a>
+                  <a href="#" class="pagination-link pagination-next-link">вперёд</a>
                 </div>
               </div>
             </div>

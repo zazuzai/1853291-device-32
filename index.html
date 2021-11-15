@@ -33,8 +33,55 @@
             <li class="navigation-item-user">
               <a class="navigation-link compare-link" href="#">Сравнить</a>
             </li>
-            <li class="navigation-item-user">
+            <li class="navigation-item-user basket-li">
               <a class="navigation-link basket-link" href="#"><span class="basket-span">2</span>Корзина</a>
+
+              <div class="popover popover-basket">
+                <div class="popover-content">
+                  <ul class="baslet-items-list">
+                    <li class="basket-item">
+                      <a href="#" class="basket-item-link">
+                        <img
+                        src="img/basket-popup/product-1.jpg"
+                        width="41"
+                        height="43"
+                        class="basket-item-pic"
+                        alt="Любительская селфи-палка."
+                        />
+                        <span class="basket-item-title">Любительская <br>
+                          селфи-палка</span>
+                      </a>
+                      <button type="button" class="basket-item-delete-button button">
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                    <li class="basket-item">
+                      <a href="#" class="basket-item-link">
+                        <img
+                        src="img/basket-popup/product-2.jpg"
+                        width="41"
+                        height="43"
+                        class="basket-item-pic"
+                        alt="Профессиональна селфи-палка."
+                        />
+                        <span class="basket-item-title">Профессиональная <br>
+                          селфи-палка</span>
+                      </a>
+                      <button type="button" class="basket-item-delete-button button">
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+
+                  <div class="popover-result">
+                    <span class="items-ammount">Товаров: 2</span>
+                    <span class="items-sum">Сумма: 2000&nbsp;₽</span>
+                  </div>
+                  <div class="open-basket-wrapper">
+                    <button type="button" class="open-basket-button">открыть корзину</button>
+                  </div>
+                  </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -507,5 +554,48 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-special-order">
+        <h2 class="modal-title">Доставка под заказ</h2>
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <form class="special-order-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="client-name">Ваше имя</label>
+              <input class="client-name-form-field modal-field" type="text" id="client-name" name="client-name" placeholder="Имя Фамилия">
+              <label class="name-error-comment">Пожалуйста, представьтесь</label>
+            </p>
+            <p class="field-group">
+              <label class="client-email">Ваш e-mail:</label>
+              <input class="client-email-form-field modal-field" type="email" id="client-email" name="client-email" value="krasotka92@mail.ru">
+              <label class="email-comment">Забавный у вас адрес</label>
+            </p>
+            <p class="field-group">
+              <label class="client-order">Что нужно привезти:</label>
+              <input class="client-order-form-field modal-field" type="text" id="client-order" name="client-order" placeholder="В свободной форме">
+            </p>
+            <div class="field-group ammount-group">
+              <label class="ammount">Количество:
+                <button class="modal-info-button" type="button"></button>
+                <div class="popup-special-order-info">
+                  <span>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                    к провозу багажа.</span>
+                </div>
+              </label>
+              <div class="modal-ammount-form">
+                <button class="modal-ammount-btn modal-min-button" type="button"></button>
+                <input class="ammount-form-field modal-field" type="number" id="order-ammount" name="order-ammount" value="1">
+                <button class="modal-ammount-btn modal-plus-button" type="button"></button>
+              </div>
+            </div>
+            <button class="send-order-btn command-btn">отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 </html>
