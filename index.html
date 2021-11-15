@@ -130,20 +130,22 @@
     <main class="main-container">
       <section class="slider">
         <div class="slider-item content-container">
-          <img
-            class="slider-image"
-            src="img/slider/slider-1.png"
-            width="560"
-            height="560"
-            alt="Коптер"
-          />
-          <div class="slider-content">
+          <div class="slider-pic">
+            <img
+              class="slider-image"
+              src="img/slider/slider-1.png"
+              width="560"
+              height="560"
+              alt="Коптер"
+            />
             <button class="slider-button slider-prev" type="button">
               <span class="visually-hidden">Предыдущий товар</span>
             </button>
             <button class="slider-button slider-next" type="button">
               <span class="visually-hidden">Следующий товар</span>
             </button>
+          </div>
+          <div class="slider-content">
             <p class="slider-slogan">
               Порхает как бабочка, <br />
               жалит как пчела!
@@ -192,20 +194,22 @@
         </div>
 
         <div class="slider-item content-container slider-item2">
-          <img
-            class="slider-image"
-            src="img/slider/slider-2.png"
-            width="560"
-            height="560"
-            alt="Фитнес-браслет"
-          />
-          <div class="slider-content">
+          <div class="slider-pic">
+            <img
+              class="slider-image"
+              src="img/slider/slider-2.png"
+              width="560"
+              height="560"
+              alt="Фитнес-браслет"
+            />
             <button class="slider-button slider-prev" type="button">
               <span class="visually-hidden">Предыдущий товар</span>
             </button>
             <button class="slider-button slider-next" type="button">
               <span class="visually-hidden">Следующий товар</span>
             </button>
+          </div>
+          <div class="slider-content">
             <p class="slider-slogan">
               Худеем <br />
               правильно!
@@ -252,20 +256,22 @@
         </div>
 
         <div class="slider-item content-container slider-item3">
-          <img
-            class="slider-image"
-            src="img/slider/slider-3.png"
-            width="560"
-            height="560"
-            alt="Палка для селфи"
-          />
-          <div class="slider-content">
+          <div class="slider-pic">
+            <img
+              class="slider-image"
+              src="img/slider/slider-3.png"
+              width="560"
+              height="560"
+              alt="Палка для селфи"
+            />
             <button class="slider-button slider3-prev" type="button">
               <span class="visually-hidden">Предыдущий товар</span>
             </button>
             <button class="slider-button slider3-next" type="button">
               <span class="visually-hidden">Следующий товар</span>
             </button>
+          </div>
+          <div class="slider-content">
             <p class="slider-slogan">
               Делай селфи, <br />
               как Бен Стиллер!
@@ -564,21 +570,40 @@
         <section class="modal-content">
           <form class="special-order-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
-              <label class="client-name">Ваше имя</label>
-              <input class="client-name-form-field modal-field" type="text" id="client-name" name="client-name" placeholder="Имя Фамилия">
-              <label class="name-error-comment">Пожалуйста, представьтесь</label>
+              <label for="client-name" class="client-name">Ваше имя</label>
+              <input class="client-name-form-field modal-field"
+              type="text"
+              id="client-name"
+              name="client-name"
+              placeholder="Имя Фамилия"
+              required>
+              <span class="modal-ok-comment visually-hidden"></span>
+              <span class="modal-error-comment visually-hidden"></span>
+
             </p>
             <p class="field-group">
-              <label class="client-email">Ваш e-mail:</label>
-              <input class="client-email-form-field modal-field" type="email" id="client-email" name="client-email" value="krasotka92@mail.ru">
-              <label class="email-comment">Забавный у вас адрес</label>
+              <label for="client-email" class="client-email">Ваш e-mail:</label>
+              <input class="client-email-form-field modal-field"
+              type="email"
+              id="client-email"
+              name="client-email"
+              placeholder="Введите e-mail"
+              required>
+              <span class="modal-ok-comment visually-hidden"></span>
+              <span class="modal-error-comment visually-hidden"></span>
             </p>
             <p class="field-group">
-              <label class="client-order">Что нужно привезти:</label>
-              <input class="client-order-form-field modal-field" type="text" id="client-order" name="client-order" placeholder="В свободной форме">
+              <label for="client-order" class="client-order">Что нужно привезти:</label>
+              <input class="client-order-form-field modal-field"
+              type="text" id="client-order"
+              name="client-order"
+              placeholder="В свободной форме"
+              required>
+              <span class="modal-ok-comment visually-hidden"></span>
+              <span class="modal-error-comment visually-hidden"></span>
             </p>
             <div class="field-group ammount-group">
-              <label class="ammount">Количество:
+              <label for="order-ammount" class="ammount">Количество:
                 <button class="modal-info-button" type="button"></button>
                 <div class="popup-special-order-info">
                   <span>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
@@ -587,9 +612,17 @@
               </label>
               <div class="modal-ammount-form">
                 <button class="modal-ammount-btn modal-min-button" type="button"></button>
-                <input class="ammount-form-field modal-field" type="number" id="order-ammount" name="order-ammount" value="1">
+                <label for="order-ammount" class="visually-hidden">Введите количество.</label>
+                <input class="ammount-form-field modal-field"
+                type="number"
+                id="order-ammount"
+                name="order-ammount"
+                placeholder="0"
+                required>
                 <button class="modal-ammount-btn modal-plus-button" type="button"></button>
               </div>
+              <span class="modal-ok-comment visually-hidden"></span>
+              <span class="modal-error-comment visually-hidden"></span>
             </div>
             <button class="send-order-btn command-btn">отправить</button>
           </form>

@@ -35,8 +35,54 @@
             <li class="navigation-item-user">
               <a class="navigation-link compare-link-login" href="#">Сравнить</a>
             </li>
-            <li class="navigation-item-user">
+            <li class="navigation-item-user basket-li">
               <a class="navigation-link basket-link" href="#"><span class="basket-span">2</span>Корзина</a>
+              <div class="popover popover-basket">
+                <div class="popover-content">
+                  <ul class="baslet-items-list">
+                    <li class="basket-item">
+                      <a href="#" class="basket-item-link">
+                        <img
+                        src="img/basket-popup/product-1.jpg"
+                        width="41"
+                        height="43"
+                        class="basket-item-pic"
+                        alt="Любительская селфи-палка."
+                        />
+                        <span class="basket-item-title">Любительская <br>
+                          селфи-палка</span>
+                      </a>
+                      <button type="button" class="basket-item-delete-button button">
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                    <li class="basket-item">
+                      <a href="#" class="basket-item-link">
+                        <img
+                        src="img/basket-popup/product-2.jpg"
+                        width="41"
+                        height="43"
+                        class="basket-item-pic"
+                        alt="Профессиональна селфи-палка."
+                        />
+                        <span class="basket-item-title">Профессиональная <br>
+                          селфи-палка</span>
+                      </a>
+                      <button type="button" class="basket-item-delete-button button">
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+
+                  <div class="popover-result">
+                    <span class="items-ammount">Товаров: 2</span>
+                    <span class="items-sum">Сумма: 2000&nbsp;₽</span>
+                  </div>
+                  <div class="open-basket-wrapper">
+                    <button type="button" class="open-basket-button">открыть корзину</button>
+                  </div>
+                  </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -119,35 +165,38 @@
                     <div class="range">
                       <div class="range-scale">
                         <div class="range-bar" style="width: 110px">
-                          <button class="range-toggle toggle-min" type="button">
-                            <span class="visually-hidden"
-                              >Изменить минимальную цену.</span
-                            >
-                          </button>
-                          <button class="range-toggle toggle-max" type="button">
-                            <span class="visually-hidden"
-                              >Изменить максимальную цену.</span
-                            >
-                          </button>
-                        </div>
-                      </div>
+                          <div class="range-toggle-wrapper">
+                            <label for="filter-input-min" class="visually-hidden">
+                              Изменить минимальную цену.
+                            </label>
+                            <input
+                              class="catalog-filter-input filter-input-min visually-hidden"
+                              type="number"
+                              value="0"
+                              name="filter-input-min"
+                              id="filter-input-min"/>
 
+                              <button class="range-toggle toggle-min" type="button">
+                                <span class="range-toggle-btn toggle-min-btn"></span>
+                                <span class="range-toggle-span toggle-min-span">от 0</span>
+                              </button>
+                            </div>
 
-                      <div class="range-wrapper-inputs">
-                        <label class="catalog-filter-label label-min-price">от<input
-                            class="catalog-filter-input filter-input-min"
-                            type="number"
-                            value="0"
-                            name="min-price"
-                          />
-                        </label>
-                        <label class="catalog-filter-label">до<input
-                            class="catalog-filter-input filter-input-max"
-                            type="number"
-                            value="5000"
-                            name="max-price"
-                          />
-                        </label>
+                            <div class="range-toggle-wrapper">
+                              <label for="filter-input-max" class="visually-hidden">
+                                Изменить максимальную цену.
+                              </label>
+                              <input
+                                class="catalog-filter-input filter-input-min visually-hidden"
+                                type="number"
+                                value="5000"
+                                name="filter-input-max"
+                                id="filter-input-max"/>
+                              <button class="range-toggle toggle-max" type="button">
+                                <span class="range-toggle-btn toggle-max-btn"></span>
+                                <span class="range-toggle-span toggle-max-span">до 5000</span>
+                              </button>
+                            </div>
                       </div>
                     </div>
                   </fieldset>
@@ -156,11 +205,12 @@
                     <legend class="catalog-filter-title color-group-title">Цвет</legend>
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
-                        <label class="control catalog-filter-color">
+                        <label for="catalog-filter-color-black" class="control catalog-filter-color">
                           <input
                             class="visually-hidden control-input"
                             type="checkbox"
                             name="black"
+                            id="catalog-filter-color-black"
                             checked
                           />
                           <span class="control-mark"></span>
@@ -169,11 +219,12 @@
                       </li>
 
                       <li class="catalog-filter-item">
-                        <label class="catalog-filter-color">
+                        <label for="catalog-filter-color-white" class="catalog-filter-color">
                           <input
                             class="visually-hidden control-input"
                             type="checkbox"
                             name="white"
+                            id="catalog-filter-color-white"
                             checked
                           />
                           <span class="control-mark"></span>
@@ -182,11 +233,12 @@
                       </li>
 
                       <li class="catalog-filter-item">
-                        <label class="catalog-filter-color">
+                        <label for="catalog-filter-color-blue" class="catalog-filter-color">
                           <input
                             class="visually-hidden control-input"
                             type="checkbox"
                             name="blue"
+                            id="catalog-filter-color-blue"
                           />
                           <span class="control-mark"></span>
                           <span class="control-label">Синий</span>
@@ -194,11 +246,12 @@
                       </li>
 
                       <li class="catalog-filter-item">
-                        <label class="catalog-filter-color">
+                        <label for="catalog-filter-color-red" class="catalog-filter-color">
                           <input
                             class="visually-hidden control-input"
                             type="checkbox"
                             name="red"
+                            id="catalog-filter-color-red"
                           />
                           <span class="control-mark"></span>
                           <span class="control-label">Красный</span>
@@ -206,11 +259,12 @@
                       </li>
 
                       <li class="catalog-filter-item">
-                        <label class="catalog-filter-color">
+                        <label for="catalog-filter-color-pink" class="catalog-filter-color">
                           <input
                             class="visually-hidden control-input"
                             type="checkbox"
                             name="pink"
+                            id="catalog-filter-color-pink"
                           />
                           <span class="control-mark"></span>
                           <span class="control-label">Розовый</span>
@@ -223,11 +277,12 @@
                     <legend class="catalog-filter-title bluetooth-group-title">Bluetooth</legend>
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
-                        <label class="control">
+                        <label for="input-bluetooth-yes" class="control">
                           <input
                             class="visually-hidden control-input"
                             type="radio"
                             name="bluetooth"
+                            id="input-bluetooth-yes"
                             value="yes"
                             checked
                           />
@@ -237,11 +292,12 @@
                       </li>
 
                       <li class="catalog-filter-item">
-                        <label class="control">
+                        <label for="input-bluetooth-no" class="control">
                           <input
                             class="visually-hidden control-input"
                             type="radio"
                             name="bluetooth"
+                            id="input-bluetooth-no"
                             value="no"
 
                           />
