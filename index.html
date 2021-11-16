@@ -5,25 +5,30 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="icon" type="img/png" sizes="32x32" href="img/fav-ic.png">
   </head>
   <body>
     <header class="header-container content-container">
       <h1 class="visually-hidden">Интернет-магазин Девайс</h1>
-      <a href="index.html">
+      <a class="header-logo" href="index.html">
         <img
           src="img/logo_header.svg"
           width="145"
           height="36"
           class="header-logo-img"
-          alt="логотип Девайс"
+          alt="логотип Девайс."
         />
       </a>
 
       <nav class="header-navigation">
+        <h2 class="visually-hidden">Навигация по сайту.</h2>
         <div class="navigation-user-wrapper">
-          <form action="https://echo.htmlacademy.ru/" method="get" class="header-search-form">
-            <input name="search"  class="input-header-search" placeholder="Поиск по сайту" type="search" />
-            <button type="submit" class="header-search-button">Найти</button>
+          <form class="header-search-form" action="https://echo.htmlacademy.ru/" method="get">
+            <input class="input-header-search"
+            name="search"
+            placeholder="Поиск по сайту"
+            type="search" />
+            <button class="header-search-button" type="submit">Найти</button>
           </form>
 
           <ul class="navigation-list-navigation-user">
@@ -38,36 +43,36 @@
 
               <div class="popover popover-basket">
                 <div class="popover-content">
-                  <ul class="baslet-items-list">
+                  <ul class="basket-items-list">
                     <li class="basket-item">
-                      <a href="#" class="basket-item-link">
+                      <a class="basket-item-link" href="#">
                         <img
+                        class="basket-item-pic"
                         src="img/basket-popup/product-1.jpg"
                         width="41"
                         height="43"
-                        class="basket-item-pic"
                         alt="Любительская селфи-палка."
                         />
                         <span class="basket-item-title">Любительская <br>
                           селфи-палка</span>
                       </a>
-                      <button type="button" class="basket-item-delete-button button">
+                      <button class="basket-item-delete-button button" type="button">
                         <span class="visually-hidden">Удалить из корзины</span>
                       </button>
                     </li>
                     <li class="basket-item">
-                      <a href="#" class="basket-item-link">
+                      <a class="basket-item-link" href="#">
                         <img
+                        class="basket-item-pic"
                         src="img/basket-popup/product-2.jpg"
                         width="41"
                         height="43"
-                        class="basket-item-pic"
                         alt="Профессиональна селфи-палка."
                         />
                         <span class="basket-item-title">Профессиональная <br>
                           селфи-палка</span>
                       </a>
-                      <button type="button" class="basket-item-delete-button button">
+                      <button class="basket-item-delete-button button" type="button">
                         <span class="visually-hidden">Удалить из корзины</span>
                       </button>
                     </li>
@@ -78,7 +83,7 @@
                     <span class="items-sum">Сумма: 2000&nbsp;₽</span>
                   </div>
                   <div class="open-basket-wrapper">
-                    <button type="button" class="open-basket-button">открыть корзину</button>
+                    <button class="open-basket-button" type="button">открыть корзину</button>
                   </div>
                   </div>
               </div>
@@ -129,6 +134,7 @@
 
     <main class="main-container">
       <section class="slider">
+        <h2 class="visually-hidden">Подборка популярных товаров.</h2>
         <div class="slider-item content-container">
           <div class="slider-pic">
             <img
@@ -136,13 +142,13 @@
               src="img/slider/slider-1.png"
               width="560"
               height="560"
-              alt="Коптер"
+              alt="Коптер."
             />
             <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущий товар</span>
+              <span class="visually-hidden">Предыдущий товар.</span>
             </button>
             <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующий товар</span>
+              <span class="visually-hidden">Следующий товар.</span>
             </button>
           </div>
           <div class="slider-content">
@@ -159,22 +165,20 @@
             <ol class="slider-pagination">
               <li class="slider-pagination-item">
                 <button
-                  class="
-                    slider-pagination-button slider-pagination-button-current
-                  "
+                  class="slider-pagination-button slider-pagination-button-current"
                   type="button"
                 >
-                  <span class="visually-hidden">товар 1</span>
+                  <span class="visually-hidden">товар 1.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">товар 2</span>
+                  <span class="visually-hidden">товар 2.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">товар 3</span>
+                  <span class="visually-hidden">товар 3.</span>
                 </button>
               </li>
             </ol>
@@ -200,13 +204,13 @@
               src="img/slider/slider-2.png"
               width="560"
               height="560"
-              alt="Фитнес-браслет"
+              alt="Фитнес-браслет."
             />
             <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущий товар</span>
+              <span class="visually-hidden">Предыдущий товар.</span>
             </button>
             <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующий товар</span>
+              <span class="visually-hidden">Следующий товар.</span>
             </button>
           </div>
           <div class="slider-content">
@@ -228,17 +232,17 @@
                   "
                   type="button"
                 >
-                  <span class="visually-hidden">товар 1</span>
+                  <span class="visually-hidden">товар 1.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">товар 2</span>
+                  <span class="visually-hidden">товар 2.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">товар 3</span>
+                  <span class="visually-hidden">товар 3.</span>
                 </button>
               </li>
             </ol>
@@ -262,13 +266,13 @@
               src="img/slider/slider-3.png"
               width="560"
               height="560"
-              alt="Палка для селфи"
+              alt="Монопод для селфи."
             />
             <button class="slider-button slider3-prev" type="button">
-              <span class="visually-hidden">Предыдущий товар</span>
+              <span class="visually-hidden">Предыдущий товар.</span>
             </button>
             <button class="slider-button slider3-next" type="button">
-              <span class="visually-hidden">Следующий товар</span>
+              <span class="visually-hidden">Следующий товар.</span>
             </button>
           </div>
           <div class="slider-content">
@@ -290,17 +294,17 @@
                   "
                   type="button"
                 >
-                  <span class="visually-hidden">товар 1</span>
+                  <span class="visually-hidden">товар 1.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">товар 2</span>
+                  <span class="visually-hidden">товар 2.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">товар 3</span>
+                  <span class="visually-hidden">товар 3.</span>
                 </button>
               </li>
             </ol>
@@ -323,6 +327,7 @@
       </section>
 
       <section class="navigation-catalogue content-container">
+        <h2 class="visually-hidden">Основной каталог товаров</h2>
         <ul class="catalogue">
           <li class="catalogue-menu-item">
             <a class="catalogue-menu-link vr" href="#"
@@ -353,7 +358,7 @@
 
       <div class="tablist-wrapper">
         <div class="tablist-container content-container">
-          <ul role="tablist" class="tablist-menu">
+          <ul class="tablist-menu" role="tablist">
             <li role="presentation">
               <a
                 class="tablist-link-active tablist-shipping command-btn"
@@ -377,7 +382,7 @@
             </li>
           </ul>
 
-          <section role="tabpanel" id="section1" aria-labelledby="tab1" class="tablist-section tab-shipping-info">
+          <section class="tablist-section tab-shipping-info" role="tabpanel" id="section1" aria-labelledby="tab1">
             <h2 class="tab-title">Доставка</h2>
             <p>
               Мы с удовольствием доставим ваш товар прямо <br />
@@ -435,12 +440,12 @@
             </li>
           </ul>
 
-          <a class="more command-btn about-us-and-contacts-info" href="">подробнее о нас</a>
+          <a class="more command-btn" href="">подробнее о нас</a>
         </section>
 
         <section class="contacts">
           <h2 class="contacts-title">Контакты</h2>
-          <p class="contacts-about description">
+          <p class="description">
             Вы можете забрать товар сами, заехав в наш офис. <br />
             Заодно сможете проверить работоспособность покупки.
           </p>
@@ -459,7 +464,7 @@
             <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
             <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
           </ul>
-          <a class="feedback command-btn about-us-and-contacts-info" href="#">Напишите нам</a>
+          <a class="feedback command-btn" href="#">Напишите нам</a>
         </section>
       </div>
 
@@ -479,6 +484,7 @@
           <div class="newsletter-form-wrapper">
           <form class="newsletter-form" action="#" method="post">
             <p class="newsletter-email">
+              <label class="visually-hidden" for="newsletter-email">Введите ваш email.</label>
               <input
                 class="main-newsletter-email"
                 placeholder="Ваш e-mail"
@@ -503,13 +509,13 @@
     <footer class="page-footer">
       <div class="content-container">
         <div class="footer-logo-wrapper">
-          <a href="index.html">
+          <a class="footer-logo" href="index.html">
             <img
               src="img/logo_footer.svg"
               width="145"
               height="36"
               class="footer-logo"
-              alt="логотип Девайс"
+              alt="логотип Девайс."
             />
           </a>
         </div>
@@ -538,24 +544,26 @@
         </div>
 
         <div class="socials-htmlacademy-wrapper">
+          <h2 class="visually-hidden">Мы в социальных сетях.</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-social-link facebook" href="https://www.facebook.com/htmlacademy"></a>
-              <span class="visually-hidden">Facebook</span>
+              <span class="visually-hidden">Facebook.</span>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link instagram" href="https://www.instagram.com/htmlacademy/"></a>
-              <span class="visually-hidden">Instagram</span>
+              <span class="visually-hidden">Instagram.</span>
             </li>
             <li class="footer-social-item">
               <a class="footer-social-link twitter" href="https://twitter.com/htmlacademy_ru"></a>
-              <span class="visually-hidden">twitter</span>
+              <span class="visually-hidden">twitter.</span>
             </li>
           </ul>
 
           <p class="footer-hmltacademy">
-            <a href="https://htmlacademy.ru/" class="footer-academy-link">
+            <a class="footer-academy-link" href="https://htmlacademy.ru/">
             </a>
+            <span class="visually-hidden">Переход на сайт HTML Academy.</span>
           </p>
         </div>
       </div>
@@ -570,7 +578,7 @@
         <section class="modal-content">
           <form class="special-order-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
-              <label for="client-name" class="client-name">Ваше имя</label>
+              <label class="client-name" for="client-name">Ваше имя</label>
               <input class="client-name-form-field modal-field"
               type="text"
               id="client-name"
@@ -582,7 +590,7 @@
 
             </p>
             <p class="field-group">
-              <label for="client-email" class="client-email">Ваш e-mail:</label>
+              <label class="client-email" for="client-email">Ваш e-mail:</label>
               <input class="client-email-form-field modal-field"
               type="email"
               id="client-email"
@@ -603,16 +611,18 @@
               <span class="modal-error-comment visually-hidden"></span>
             </p>
             <div class="field-group ammount-group">
-              <label for="order-ammount" class="ammount">Количество:
-                <button class="modal-info-button" type="button"></button>
-                <div class="popup-special-order-info">
-                  <span>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
-                    к провозу багажа.</span>
-                </div>
-              </label>
+              <div class="ammount-title-and-btn">
+                <label class="ammount" for="order-ammount">Количество:</label>
+                  <button class="modal-info-button" type="button"></button>
+                  <div class="popup-special-order-info">
+                    <span>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                      к провозу багажа.</span>
+                  </div>
+              </div>
+
               <div class="modal-ammount-form">
                 <button class="modal-ammount-btn modal-min-button" type="button"></button>
-                <label for="order-ammount" class="visually-hidden">Введите количество.</label>
+                <label class="visually-hidden" for="order-ammount">Введите количество.</label>
                 <input class="ammount-form-field modal-field"
                 type="number"
                 id="order-ammount"
