@@ -1175,7 +1175,7 @@ td.slider3-td {
 .about-us-and-contacts {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
+  margin-bottom: 85px;
   padding-top: 37px;
 }
 
@@ -1615,7 +1615,7 @@ td.slider3-td {
 .footer-content-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .footer-navigation {
@@ -1709,9 +1709,9 @@ td.slider3-td {
   flex-wrap: wrap;
   justify-content: center;
   width: 400px;
-  margin-right: 245px;
+  margin-right: 248px;
 
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 0;
   padding-inline-start: 0;
   list-style-type: none;
