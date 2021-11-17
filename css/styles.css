@@ -38,6 +38,7 @@ body {
   margin: 0;
   display: flex;
   min-height: 100%;
+  min-width: 1160px;
   flex-direction: column;
   font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
@@ -532,6 +533,10 @@ body {
   outline: none;
 }
 
+.user-navigation-link:focus-visible + .dropdown-catalog {
+  display: grid;
+}
+
 .shipping-link:active,
 .warranty-link:active,
 .contacts-link:active {
@@ -855,6 +860,7 @@ body {
   color: #000000;
   text-decoration: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 
@@ -903,6 +909,7 @@ td.slider3-td {
 }
 
 .catalogue-menu-item {
+  min-width: 160px;
   margin-right: 39px;
   margin-bottom: 20px;
 }
@@ -1872,8 +1879,9 @@ td.slider3-td {
 
 .inner-header {
   margin-top: 0;
+  box-sizing: border-box;
   margin-bottom: 40px;
-  padding-left: 120px;
+  padding-left: 60px;
 }
 
 .inner-header h2 {
@@ -2363,6 +2371,7 @@ td.slider3-td {
 
 
 .filter-button {
+  min-width: 100%;
   position: relative;
   border: 0;
   padding: 0 40px;
@@ -2530,6 +2539,20 @@ td.slider3-td {
 
   text-decoration: none;
   cursor: pointer;
+}
+
+.new-product::before {
+  position: absolute;
+  content: "";
+  display: block;
+  z-index: 1;
+  top: 27px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/new-product.svg") no-repeat;
+  background-color: transparent;
+
 }
 
 .product-card:hover .product-card-more {
